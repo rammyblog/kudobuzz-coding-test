@@ -1,3 +1,4 @@
 export const START_UPLOAD = "START_UPLOAD"
 export const UPLOADED_FILE = "UPLOADED_FILE"
 export const FAILED_UPLOAD = "FAILED_UPLOAD"
+export const CLEAR_STATE = "CLEAR_STATE"

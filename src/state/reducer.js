@@ -1,8 +1,13 @@
-import { START_UPLOAD, FAILED_UPLOAD, UPLOADED_FILE } from "./actionTypes"
+import {
+  START_UPLOAD,
+  FAILED_UPLOAD,
+  UPLOADED_FILE,
+  CLEAR_STATE,
+} from "./actionTypes"
 
 const initialState = {
-  loading: null,
-  error: null,
+  loading: false,
+  error: false,
   reviews: [],
   errorResponse: null,
 }
@@ -20,6 +25,13 @@ const reducer = (state = initialState, action) => {
       }
     case FAILED_UPLOAD:
       return { loading: false, error: true, errorResponse: action.payload }
+    case CLEAR_STATE:
+      return {
+        loading: null,
+        error: null,
+        reviews: [],
+        errorResponse: null,
+      }
 
     default:
       return { state }
