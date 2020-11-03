@@ -1,4 +1,3 @@
-import logo from "./logo.svg"
 import "./App.css"
 import UploadFile from "./component/UploadFile"
 import DisplayReviews from "./component/DisplayReviews"

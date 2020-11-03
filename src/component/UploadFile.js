@@ -61,6 +61,8 @@ function UploadFile() {
         return
       }
 
+      //   if()
+
       dispatch({ type: "UPLOADED_FILE", payload: data })
     })
   }

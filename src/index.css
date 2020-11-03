@@ -4,9 +4,15 @@
   margin: 15px auto;
   border: 1px solid #ccc;
   border-radius: 5px;
+  text-align: center;
 }
 
 .container p {
   padding-top: 10px;
   color: #666;
+  text-align: center;
+}
+
+.react-csv-input {
+  text-align: center;
 }
